@@ -5,6 +5,7 @@
   --focus-text-color: #2196f3;
   --hero-background-color: #2f303a;
   --adress-footer-color: rgba(255, 255, 255, 0.6);
+  --button-background-color: #f5f4fa;
 }
 
 body {
@@ -15,24 +16,25 @@ body {
 
 a {
   text-decoration: none;
-  color: initial;
+  color: inherit;
 }
 
-button {
+.buttn {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  background-color: var(--button-background-color);
+  color: var(--primary-text-color);
 }
 
-button:hover,
-button:focus {
+.buttn:hover,
+.buttn:focus {
   background-color: var(--focus-text-color);
   color: var(--primary-background-color);
 }
@@ -46,11 +48,31 @@ h3 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 address {
   font-style: normal;
+}
+
+.main-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--focus-text-color);
+  color: var(--primary-background-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background: #188CE8;
 }
 
 .logo {
@@ -65,12 +87,7 @@ footer {
   background-color: var(--hero-background-color);
 }
 
-footer address {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-background-color);
-}
+
 
 .web {
   color: var(--focus-text-color);
@@ -101,6 +118,7 @@ footer address {
   font-weight: normal;
   font-style: 14px;
   line-height: 1.71;
+
   color: var(--adress-footer-color);
 }
 
@@ -166,4 +184,17 @@ footer address {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.h-text {
+  font-size: 18px;
+}
+
+.logo-bot {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-background-color);
 }
